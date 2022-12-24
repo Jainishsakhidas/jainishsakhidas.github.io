@@ -285,6 +285,7 @@ svg.bottom-overlay {
   width: 15.625rem;
   height: 7.812rem;
   background-color: rgb(212, 212, 212);
+  /* border-radius: 2rem; */
 }
 .project-card-footer {
   display: flex;
