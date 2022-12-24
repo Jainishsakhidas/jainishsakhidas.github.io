@@ -216,7 +216,12 @@ button.btn {
   z-index: 10;
 }
 
-a.btn svgbutton.btn svg {
+a.btn span {
+  text-align: center;
+}
+
+a.btn svg,
+button.btn svg {
   font-size: 1rem;
   margin: 0.5rem;
 }
