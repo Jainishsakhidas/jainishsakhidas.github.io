@@ -60,7 +60,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: 100.1vh;
 }
 .intro-text {
   display: flex;
@@ -98,6 +98,7 @@ nav {
   font-weight: bold;
   margin-top: 1rem;
 } */
+
 .profile-links {
   display: flex;
   justify-content: space-evenly;
@@ -169,8 +170,6 @@ nav {
 .profile-pic img {
   width: 25.75rem;
   height: 25rem;
-  /* border-radius: 50%; */
-  /* border:1px solid black; */
 }
 .about-me {
   margin: 2rem;
@@ -180,8 +179,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
-  /* align-items: center; */
 }
 .about-me p {
   font-size: 1.5rem;
@@ -191,11 +188,20 @@ nav {
   text-align: justify;
 }
 
+.resume-link {
+  width: 100%;
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+a.btn,
 button.btn {
-  background-color: #d898ff;
+  background-color: #e057f6;
   color: black;
   display: block;
-  width: 40%;
+  width: 25%;
   height: 3rem;
   margin: auto;
   padding: 1rem;
@@ -205,20 +211,20 @@ button.btn {
   box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   cursor: pointer;
   z-index: 10;
 }
 
-button.btn svg {
+a.btn svgbutton.btn svg {
   font-size: 1rem;
+  margin: 0.5rem;
 }
+a.btn:active,
 button.btn:active {
   box-shadow: 7px 7px 14px 2px rgba(0, 0, 0, 0.3);
 }
-.about-me button.btn {
-  margin: 2rem 2rem 2rem 0rem;
-}
+
 #project-section {
   position: relative;
   background-color: #f5e5ff;
@@ -282,18 +288,34 @@ svg.bottom-overlay {
   width: 100%;
 }
 .project-card-footer svg {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .project-desc {
   width: 35%;
   margin: 2rem 4rem;
 }
+.project-desc div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border-bottom: 1px solid black; */
+}
+.project-desc div .tag {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ab08f6;
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+  /* border: 3px solid black; */
+}
 
 .project-desc p {
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 .reverse {
@@ -333,7 +355,7 @@ svg.bottom-overlay {
 }
 
 .contact-card > * {
-  margin: 1.5rem;
+  margin: 0.75rem;
 }
 
 .contact-form {
@@ -408,6 +430,20 @@ svg.bottom-overlay {
   margin: 1rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
+@media screen and (max-width: 1176px) {
+  .about-me {
+    width: 80%;
+    margin: 0;
+  }
+
+  .profile-pic {
+    margin: 1rem;
+  }
+}
 /* 1040 */
 @media screen and (max-width: 1040px) {
   html {
@@ -420,8 +456,7 @@ svg.bottom-overlay {
   .about-me p {
     text-align: justify;
   }
-  .about-me button.btn {
-    margin: 2rem auto;
+  button.btn {
     font-size: 1.2rem;
     height: auto;
     width: 30%;
@@ -458,14 +493,17 @@ svg.bottom-overlay {
   .contact-form {
     width: 100%;
   }
-  .about-me button.btn {
-    width: 60%;
+  button.btn {
+    width: 45%;
   }
 }
 
 @media screen and (max-width: 430px) {
   .skill-section {
     display: none;
+  }
+  button.btn {
+    width: 75%;
   }
 }
 

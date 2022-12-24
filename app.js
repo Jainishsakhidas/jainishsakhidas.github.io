@@ -19,7 +19,7 @@ window.addEventListener("scroll", function (e) {
   // oldValue = newValue;
 
   if (newValue > 0) {
-    navbar.style.backgroundColor = "rgb(136, 0, 199)";
+    navbar.style.backgroundColor = "rgb(215, 0, 255)";
   } else if (newValue == 0) {
     navbar.style.backgroundColor = "transparent";
   }
